@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 200, 255));
+}
+header {
+  
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+.container, .project-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.image-section img {
+  max-width: 48%;
+  border-radius: 8px;
+}
+.sobre, .project-container{
+  color: #ddd;
+}
+.email {
+  margin-top: 20px;
+}
+.email h3 {
+  color: #ddd;
+  margin-bottom: 10px;
+}
+.email input,
+.email textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.email button {
+  background-image: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 200, 255));
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.email button:hover {
+  background-image: linear-gradient(to right, rgb(58, 0, 125), rgb(0, 120, 154));
+}
+
+/* Tema Escuro */
+.d-theme {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(20, 20, 20), rgb(3, 3, 3));
+  color: #000;
+}
+
+.d-theme .container {
+  background: rgba(16, 16, 16, 0.8);
+}
+
+.d-theme .email button {
+  background-image: linear-gradient(to right, rgb(0, 123, 255), rgb(0, 200, 255));
+  color: #000;
+}
+
+.d-theme .email button:hover {
+  background-image: linear-gradient(to right, rgb(0, 80, 150), rgb(0, 140, 180));
+}
+
+/* Tema "Claro" (padrão existente) */
+.l-theme {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 200, 255));
+  color: #fff;
+}
+
+.l-theme .container {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.l-theme .email button {
+  background-image: linear-gradient(to right, rgb(119, 0, 255), rgb(0, 200, 255));
+  color: white;
+}
+
+.l-theme .email button:hover {
+  background-image: linear-gradient(to right, rgb(58, 0, 125), rgb(0, 120, 154));
+}
+
+#toggle-theme {
+  position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #6c63ff;
+color: white;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+#toggle-theme:hover {
+  background-color: #4b47d4; 
+}
+
+/* Estilo do menu de navegação */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo dos botões */
+button {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4b47d4;
+}  
