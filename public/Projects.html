@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <header>
+        <button id="toggle-theme" style="padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">Alternar Tema</button>
+        <h1>Meus Projetos</h1>
+        <p>Confira alguns dos projetos que desenvolvi e ainda posso estar desenvolvendo!</p>
+        <button onclick="window.location.href='index.html'" style="padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+            Voltar à Página Inicial
+        </button>
+    </header>
+    <div class="project-container">
+        <section>
+            <h2>Jogo da Velha</h2>
+            <div>
+            <a href="https://github.com/Fellps-collab/Jogo-da-Velha" target="_blank" rel="noopener noreferrer">
+                <img src="src/imag/github.png" alt="Meu Projeto no GitHub" style="max-width: 10%; border-radius: 8px; cursor: pointer;">
+            </a>
+            <p>Esse foi meu primeiro projeto "bem sucedido" mesmo sendo uma coisa simples, ainda fiquei muito feliz quando eu
+                finalizei, assim como esse, todos os projetos estão no meu GitHub.
+            </p>
+            </div>
+        </section>
+        <section>
+            <h2>Pesquisa de Atletas</h2>
+            <div>
+            <a href="https://github.com/Fellps-collab/Atleta-pesquisa" target="_blank" rel="noopener noreferrer">
+                <img src="src/imag/github.png" alt="Meu Projeto no GitHub" style="max-width: 10%; border-radius: 8px; cursor: pointer;">
+            </a>
+            <p>Apesar desse ser meu primeiro projeto, acabou que ficou legal mas não senti o mesmo senso de "sucesso" que eu senti com o jogo
+                da velha.</p>
+            </div>
+        </section>
+        <section>
+            <h2>To do list</h2>
+            <div>
+            <a href="https://github.com/Fellps-collab/to-do-list" target="_blank" rel="noopener noreferrer">
+                <img src="src/imag/github.png" alt="Meu Projeto no GitHub" style="max-width: 10%; border-radius: 8px; cursor: pointer;">
+            </a>
+            <p>Esse projeto foi uma To do List, apesar de ter sido bom ter feito, o projeto final ficou um pouco diferente do que eu esperava.</p>
+            </div>
+        </section>
+        <br>
+        <p>Lembrando que todos os links são para o mesmo GitHub, somente repositorios diferentes, sinta-se a vontade para ver o que te interessa no meu
+            GitHub.
+        </p>
+    </div>
+</body>
+<script>
+    
+    const body = document.body;
+    const toggleButton = document.getElementById('toggle-theme');
+
+    // Inicializa o tema (padrão: light-theme)
+    const savedTheme = localStorage.getItem('theme') || 'l-theme';
+    body.classList.add(savedTheme);
+
+    // Alterna entre light-theme e dark-theme
+    toggleButton.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('l-theme') ? 'l-theme' : 'd-theme';
+        const newTheme = currentTheme === 'l-theme' ? 'd-theme' : 'l-theme';
+
+        body.classList.remove(currentTheme);
+        body.classList.add(newTheme);
+
+        // Salva o tema no LocalStorage
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
+</html>
