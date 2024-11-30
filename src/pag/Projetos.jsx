@@ -59,7 +59,7 @@ function Projetos() {
               rel="noopener noreferrer"
             >
               <img
-                src="../../public/github.png"
+                src="/github.png"
                 alt="Meu Projeto no GitHub"
                 style={{ maxWidth: "10%", borderRadius: "8px", cursor: "pointer" }}
               />
@@ -81,7 +81,7 @@ function Projetos() {
               rel="noopener noreferrer"
             >
               <img
-                src="../../public/github.png"
+                src="/github.png"
                 alt="Meu Projeto no GitHub"
                 style={{ maxWidth: "10%", borderRadius: "8px", cursor: "pointer" }}
               />
@@ -103,7 +103,7 @@ function Projetos() {
               rel="noopener noreferrer"
             >
               <img
-                src="../../public/github.png"
+                src="/github.png"
                 alt="Meu Projeto no GitHub"
                 style={{ maxWidth: "10%", borderRadius: "8px", cursor: "pointer" }}
               />

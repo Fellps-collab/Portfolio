@@ -39,8 +39,8 @@ function Home() {
 
       <div className="container">
         <section className="image-section">
-          <img src="../../public/lip.jpg" alt="Imagem 1" />
-          <img src="../../public/lip2.jpg" alt="Imagem 2" />
+          <img src="/lip.jpg" alt="Imagem 1" />
+          <img src="/lip2.jpg" alt="Imagem 2" />
         </section>
 
         <section className="sobre">
@@ -97,7 +97,7 @@ e eu não queria saber muito das coisas em si por lá pois além de pequeno eu e
               rel="noopener noreferrer"
             >
               <img
-                src="../../public/instagram.png"
+                src="/instagram.png"
                 alt="instagram"
                 style={{ maxWidth: '10%', borderRadius: '8px', cursor: 'pointer' }}
               />
@@ -109,7 +109,7 @@ e eu não queria saber muito das coisas em si por lá pois além de pequeno eu e
               style={{ paddingLeft: '10px' }}
             >
               <img
-                src="../../public/Youtube.png"
+                src="/Youtube.png"
                 alt="youtube"
                 style={{ maxWidth: '15%', borderRadius: '8px', cursor: 'pointer' }}
               />
@@ -121,7 +121,7 @@ e eu não queria saber muito das coisas em si por lá pois além de pequeno eu e
               style={{ paddingLeft: '10px' }}
             >
               <img
-                src="../../public/github.png"
+                src="/github.png"
                 alt="github"
                 style={{ maxWidth: '10%', borderRadius: '8px', cursor: 'pointer' }}
               />
