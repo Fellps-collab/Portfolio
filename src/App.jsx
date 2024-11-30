@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import Index from './pag/Index';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate, BrowserRouter } from 'react-router-dom';
+import Home from './pag/Home';
 import Projetos from './pag/Projetos';
 
 // Componente de alternância de tema
@@ -29,9 +29,8 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Definindo as Rotas */}
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projetos" element={<Projetos />} />
         </Routes>
       </div>
